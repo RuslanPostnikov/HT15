@@ -1,0 +1,105 @@
+.main-products {
+        margin-bottom: 135px;
+
+    .mpw-ht {
+        @extend %flex;
+        flex-direction: column;
+        margin-bottom: 90px;
+
+        .mpw-heading {
+            @extend %h-style;
+            @extend %flex;
+            margin-bottom: 40px;
+        }
+        .mpw-text {
+            @extend %s-text-style;
+            @extend %flex;
+            flex-direction: column;
+            margin-bottom: 35px;
+            
+            
+        }
+        .mpw-line {
+            @extend %flex;
+            width: 130px;
+            border-bottom: 3px solid $bg-hover-color;
+        }
+    }
+
+.mpw-menu {
+    margin-bottom: 65px;
+    nav {
+        ul {
+            @extend %flex;
+            
+            li {
+            list-style: none;
+            a {
+                color: #737373;
+                text-decoration: none;
+                font-size: 25px;
+                
+            }
+            }
+
+            li:not(:last-child) {
+                margin-right: 60px;
+            }
+        }
+    }
+}
+
+.mpw-images {
+    @extend %flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    div {
+        
+        height: 290px;
+        width: calc(100% / 4 - 20px);
+        margin-bottom: 15px;
+        @extend %img-style;
+        
+    }
+
+    div:not(:nth-child(4n)) {
+        margin-right: 20px;
+    }
+
+    .mpw-image-1 {
+        background-image: url(../images/1.jpg);
+        
+    }
+    .mpw-image-2 {
+        background-image: url(../images/2.jpg);
+        
+    }
+    .mpw-image-3 {
+        background-image: url(../images/3.jpg);
+        
+    }
+    .mpw-image-4 {
+        background-image: url(../images/4.jpg);
+        
+    }
+    .mpw-image-5 {
+        background-image: url(../images/5.jpg);
+        
+    }
+    .mpw-image-6 {
+        background-image: url(../images/6.jpg);
+        
+    }
+    .mpw-image-7 {
+        background-image: url(../images/7.jpg);
+        
+    }
+    .mpw-image-8 {
+        background-image: url(../images/8.jpg);
+        
+    }
+}
+
+}

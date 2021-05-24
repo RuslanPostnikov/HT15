@@ -1,0 +1,11 @@
+@media (max-width: 576px) {
+  footer {
+    .footer-wrapper {
+      flex-direction: column;
+
+      .copyright {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

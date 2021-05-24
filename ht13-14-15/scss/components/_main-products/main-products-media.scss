@@ -1,0 +1,42 @@
+@media (max-width: 1200px) {
+    .main-products {
+        .mpw-images {
+            div {
+                width: calc(100% / 2 - 20px);
+            }
+
+            div:not(:nth-child(4n)) {
+                margin-right: 0;
+            }
+
+            div:not(:nth-child(2n)) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .main-products {
+        .mpw-menu {
+            nav {
+              ul {
+                flex-direction: column;
+              }
+            }
+        }
+
+        .mpw-images {
+            div {
+                width: 100%;
+            }
+
+            div:not(:nth-child(2n)) {
+                margin-right: 0;
+            }
+        }
+
+    }
+
+}

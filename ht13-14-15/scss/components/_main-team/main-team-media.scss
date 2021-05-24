@@ -1,0 +1,54 @@
+@media (max-width: 992px) {
+  .main-team {
+    .main-team-wrapper {
+      @include flex;
+      flex-direction: column;
+
+      .mtw-block-2 {
+        @include flex;
+        flex-direction: column;
+
+        .mtwb2-l-block {
+          width: 100%;
+          margin: 0 0 15px;
+        }
+
+        .mtwb2-r-block {
+          width: 100%;
+
+          .mtwb2-images {
+            flex-wrap: wrap;
+            div {
+              width: calc(50% - 20px);
+            }
+
+            div:nth-child(2n) {
+              margin-right: 0;
+            }
+
+            div:nth-child(-n + 2) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main-team {
+    .main-team-wrapper {
+      .mtw-block-2 {
+        .mtwb2-r-block {
+          .mtwb2-images {
+            div {
+              width: 100%;
+              margin: 0 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

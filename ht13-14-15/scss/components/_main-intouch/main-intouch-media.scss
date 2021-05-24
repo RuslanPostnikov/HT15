@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+  .main-intouch {
+    .miw-block-2 {
+      flex-direction: column;
+
+      .miw-lb {
+        width: 100%;
+        margin: 0 0 20px;
+        form {
+          .miw-lb-ne {
+            flex-direction: column;
+            input:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .miw-rb {
+        width: 100%;
+      }
+    }
+  }
+}

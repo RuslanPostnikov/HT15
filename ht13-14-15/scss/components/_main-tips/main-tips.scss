@@ -1,0 +1,52 @@
+.main-tips {
+    background-color: #f5f0dd;
+    padding: 140px 0;
+
+    .main-tips-wrapper {
+        @extend %flex;
+        flex-direction: column;
+
+        .mtw-heading {
+            color: $bg-font-color;
+            @extend %h-style;
+            margin-bottom: 45px;
+        }
+
+        .mtw-text {
+            color: $bg-font-color;
+            font-size: $s-font-size;
+            margin-bottom: 60px;
+        }
+
+        form {
+            .email {
+                width: 520px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-left: 40px;
+                border: 0;
+                border-radius: 3px;
+                margin-right: 20px;
+
+            }
+
+            .submit {
+                @include btn ($bg-hover-color, $bg-font-color);
+               
+                padding: 35px 55px;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+
+            .submit:hover {
+                @include btn ($bg-font-color, $bg-hover-color);
+               
+                padding: 35px 55px;
+                box-sizing: border-box;
+                border-radius: 3px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,101 @@
+.main-team {
+    margin-bottom: 110px;
+    .mtw-ht {
+        margin-bottom: 70px;
+
+        .mtw-heading {
+            @extend %h-style;
+            margin-bottom: 45px;
+        }
+
+        .mtw-text {
+            @extend %s-text-style;
+            margin-bottom: 35px;
+        }
+
+        .mtw-line {
+            width: 130px;
+            border-bottom: 3px solid $bg-hover-color;
+        }
+    }
+
+    .mtw-block-2 {
+
+        @extend %flex;
+        align-items: flex-start;
+
+        .mtwb2-l-block {
+            width: 25%;
+            height: 450px;
+            @extend %img-style;
+            background-image: url(../images/Meladze.jpg);
+            margin-right: 75px;
+        }
+
+        .mtwb2-r-block {
+            @extend %flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 75%;
+
+            .mtwb2-heading {
+                font-size: 25px;
+                color: $h-color;
+                margin-bottom: 40px;
+            }
+
+            .mtwb2-text {
+                @extend %s-text-style;
+                margin-bottom: 45px;
+            }
+
+           .mtwb2-social ul {
+                @extend %flex;
+                margin-bottom: 30px;
+                padding-left: 0;
+
+                li {
+                    text-decoration: none;
+                    list-style: none;
+                    font-style: italic;
+                    color: $h-color;
+                }
+
+                li:not(:last-child) {
+                    margin-right: 35px;
+                }
+           } 
+
+           .mtwb2-images {
+                width: 100%;
+                @extend %flex;
+
+                div {
+                    width: 25%;
+                    height: 215px;
+                    @extend %img-style;
+                }
+
+                .mtwb2-image-1 {
+                    background-image: url(../images/loboda.jpg);
+                }
+                .mtwb2-image-2 {
+                    background-image: url(../images/Brezhneva.jpg);
+                }
+                .mtwb2-image-3 {
+                    background-image: url(../images/gran.jpg);
+                }
+                .mtwb2-image-4 {
+                    background-image: url(../images/sedokova.jpg);
+                }
+
+            }
+
+            .mtwb2-images div:not(:last-child) {
+                margin-right: 20px;
+            }
+        }    
+    }
+
+
+}

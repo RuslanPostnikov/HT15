@@ -1,0 +1,29 @@
+footer {
+    background-color: $bg-menu-color;
+
+    .footer-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 0;
+
+        .copyright {
+            color: $bg-font-color;
+        }
+
+        .sm {
+            @extend %flex;
+
+            a {
+                background-color: white;
+                border-radius: 50px;
+                height: 30px;
+                width: 30px;
+            }
+
+            a:not(:last-child){
+                margin-right: 10px;
+            }
+        }
+    }
+}

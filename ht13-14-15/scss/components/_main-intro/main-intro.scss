@@ -1,0 +1,51 @@
+.main-intro {
+    @extend %block-margin;
+    background-color: $bg-header-color;
+
+    .main-intro-wrapper {
+        @extend %flex;
+        align-items: flex-start;
+        
+        .main-intro-wrapper-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            padding-right: 100px;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 46px;
+                span {
+                    font-size: 60px;
+                    font-weight: bolder;
+                }
+                p {
+                    padding-right: 75px;
+                    @extend %s-text-style;
+                }
+            }
+
+            .contact a {
+                @include btn ($bg-hover-color, $bg-font-color);
+                align-items: center;
+                padding: 10px 60px;
+                width: 40%;
+            }
+
+            .contact a:hover {
+                @include btn ($bg-font-color, $bg-hover-color);
+            }
+        }
+
+        .main-intro-wrapper-right {
+            width: 50%;
+
+            iframe {
+                height: 360px;
+                width: 100%;
+            }
+        }
+    }
+}

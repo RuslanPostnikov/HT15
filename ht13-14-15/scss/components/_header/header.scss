@@ -1,0 +1,23 @@
+header {
+    @extend %block-margin;
+    background-color: $bg-header-color;
+    
+    .menu-wrapper {
+        background-color: $bg-menu-color;
+
+        ul {
+            @extend %flex;
+            margin: 0;
+
+            li {
+                list-style: none;
+                color: white;
+                padding: 45px 25px;
+            }
+
+            li:hover {
+                background-color: $bg-hover-color;
+            }
+        }
+    }
+}

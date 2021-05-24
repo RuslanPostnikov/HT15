@@ -1,0 +1,11 @@
+ @mixin btn ($bg, $fcolor) {
+     background-color: $bg;
+     color: $fcolor;
+     @extend %btn-border;
+ }
+
+ @mixin flex {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
